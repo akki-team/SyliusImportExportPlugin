@@ -73,7 +73,6 @@ final class RegisterImporterPass implements CompilerPassInterface
                 [],
                 ['resource' => $type],
                 null,
-                true,
             ])
             ->addTag('sylius_twig_hooks.hookable', ['priority' => 0])
         ;
