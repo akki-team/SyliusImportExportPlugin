@@ -85,7 +85,7 @@ services:
     # Default export transformers and a default transformers pool
     sylius.exporters_transformer_pool:
         class: FriendsOfSylius\SyliusImportExportPlugin\Exporter\Transformer\Pool
-        arguments: [!tagged sylius.exporter_transformer]
+        arguments: [!tagged_iterator sylius.exporter_transformer]
 
     sylius.exporters_transformer_datetime:
         class: FriendsOfSylius\SyliusImportExportPlugin\Exporter\Transformer\Handler\DateTimeToStringHandler
@@ -107,7 +107,7 @@ services:
     # Default import transformers and a default transformers pool
     sylius.importers_transformer_pool:
         class: FriendsOfSylius\SyliusImportExportPlugin\Importer\Transformer\Pool
-        arguments: [!tagged sylius.importer_transformer]
+        arguments: [!tagged_iterator sylius.importer_transformer]
 
     sylius.importers_transformer_datetime:
         class: FriendsOfSylius\SyliusImportExportPlugin\Importer\Transformer\Handler\StringToDateTimeHandler
