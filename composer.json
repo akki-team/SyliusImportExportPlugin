@@ -11,8 +11,8 @@
         "symfony/stopwatch": "^6.4 || ^7.1"
     },
     "suggest": {
-        "portphp/spreadsheet": "To support importing Excel and LibreOffice Calc files, use version ^1.1",
-        "portphp/csv": "To support importing csv files, use version ^1.1",
+        "portphp/spreadsheet": "To support importing Excel and LibreOffice Calc files, use version ^1.0 with portphp/portphp ^1.2, ^2.0 with portphp/portphp ^2.0",
+        "portphp/csv": "To support importing csv files, use version ^1.1 with portphp/portphp ^1.2, ^3.1 with portphp/portphp ^2.0",
         "enqueue/enqueue-bundle" : "To help defining message queuing services",
         "enqueue/redis" : "To support message queuing via redis",
         "enqueue/sqs" : "To support message queuing via sqs"
@@ -44,8 +44,8 @@
         "symfony/mailer": "^6.4 || ^7.1",
         "symfony/webpack-encore-bundle": "^1.15 || ^2.2",
         "symfony/web-profiler-bundle": "^6.4 || ^7.1",
-        "portphp/csv": "^1.1.0",
-        "portphp/spreadsheet": "^1.0.0-alpha",
+        "portphp/csv": "^1.1.0 || ^3.1",
+        "portphp/spreadsheet": "^1.0.0-alpha || ^2.0",
         "predis/predis": "^1.1"
     },
     "conflict": {
